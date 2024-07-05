@@ -28,16 +28,16 @@ Somar 2 numeros
 	...    browserName=    
 	...    appium:ensureWebviewsHavePages=${True}    
 	...    appium:nativeWebScreenshot=${True}    
-	...    sauce:options=[object Object]    
+	# ...    sauce:options=[object Object]    
 	...    appium:newCommandTimeout=${3600}    
 	...    appium:connectHardwareKeyboard=${True}
-    ${botao_numero_3} =    Set Variable     accessibility_id=3
-    Click Element    ${botao_numero_3}
-    ${botao_substrair} =    Set Variable     accessibility_id=minus
-    Click Element    ${botao_substrair}
-    ${botao_numero_1} =    Set Variable     accessibility_id=1
-    Click Element    ${botao_numero_1}
-    ${botao_igual} =    Set Variable     accessibility_id=equals
-    Click Element    ${botao_igual}
+    ${btn_numero_3} =    Set Variable     accessibility_id=3
+    Click Element    ${btn_numero_3}
+    ${btn_substrair} =    Set Variable     accessibility_id=minus
+    Click Element    ${btn_substrair}
+    ${btn_numero_1} =    Set Variable     accessibility_id=1
+    Click Element    ${btn_numero_1}
+    ${btn_igual} =    Set Variable     accessibility_id=equals
+    Click Element    ${btn_igual}
     ${resultado_substracao} =    Set Variable     id=com.google.android.calculator:id/result_final
     Click Element    ${resultado_substracao}
