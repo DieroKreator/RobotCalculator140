@@ -28,7 +28,7 @@ Somar 2 numeros
 	...    browserName=    
 	...    appium:ensureWebviewsHavePages=${True}    
 	...    appium:nativeWebScreenshot=${True}    
-	...    sauce:options=[object Object]    
+	# ...    sauce:options=[object Object]    
 	...    appium:newCommandTimeout=${3600}    
 	...    appium:connectHardwareKeyboard=${True}
     ${botao_numero_1} =    Set Variable     xpath=//android.widget.ImageButton[@content-desc="1"]
