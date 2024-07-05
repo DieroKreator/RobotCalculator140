@@ -16,7 +16,7 @@ ${SAUCE_USERNAME}    oauth-d38460244-4a06b
 ${REMOTE_URL}    https://${SAUCE_USERNAME}:%{SAUCE_ACCESS_KEY}@ondemand.us-west-1.saucelabs.com:443/wd/hub
 
 *** Test Cases ***
-Somar 2 numeros
+Multiplicar 2 numeros
     Open Application    ${REMOTE_URL}   
 	...    platformName=Android    
 	...    appium:platformVersion=9.0    
@@ -28,18 +28,18 @@ Somar 2 numeros
 	...    browserName=    
 	...    appium:ensureWebviewsHavePages=${True}    
 	...    appium:nativeWebScreenshot=${True}    
-	...    sauce:options=[object Object]    
+	# ...    sauce:options=[object Object]    
 	...    appium:newCommandTimeout=${3600}    
 	...    appium:connectHardwareKeyboard=${True}
-    ${botao_numero_4} =    Set Variable     accessibility_id=4
-    Click Element    ${botao_numero_4}
-    ${botao_multiplicar} =    Set Variable     accessibility_id=multiply
-    Click Element    ${botao_multiplicar}
-    ${botao_numero_6} =    Set Variable     accessibility_id=6
-    Click Element    ${botao_numero_6}
-    ${botao_igual} =    Set Variable     accessibility_id=equals
-    Click Element    ${botao_igual}
+    ${btn_numero_4} =    Set Variable     accessibility_id=4
+    Click Element    ${btn_numero_4}
+    ${btn_multiplicar} =    Set Variable     accessibility_id=multiply
+    Click Element    ${btn_multiplicar}
+    ${btn_numero_6} =    Set Variable     accessibility_id=6
+    Click Element    ${btn_numero_6}
+    ${btn_igual} =    Set Variable     accessibility_id=equals
+    Click Element    ${btn_igual}
     ${resultado_multiplicar} =    Set Variable     id=com.google.android.calculator:id/result_final
     Click Element    ${resultado_multiplicar}
-    ${botao_limpar} =    Set Variable     accessibility_id=clear
-    Click Element    ${botao_limpar}
+    ${btn_limpar} =    Set Variable     accessibility_id=clear
+    Click Element    ${btn_limpar}

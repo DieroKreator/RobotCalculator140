@@ -16,7 +16,7 @@ ${SAUCE_USERNAME}    oauth-d38460244-4a06b
 ${REMOTE_URL}    https://${SAUCE_USERNAME}:%{SAUCE_ACCESS_KEY}@ondemand.us-west-1.saucelabs.com:443/wd/hub
 
 *** Test Cases ***
-Somar 2 numeros
+Substrair 2 numeros
     Open Application    ${REMOTE_URL}   
 	...    platformName=Android    
 	...    appium:platformVersion=9.0    
