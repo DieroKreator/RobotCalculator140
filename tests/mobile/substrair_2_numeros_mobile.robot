@@ -40,4 +40,4 @@ Substrair 2 numeros
     ${btn_igual} =    Set Variable     accessibility_id=equals
     Click Element    ${btn_igual}
     ${resultado_substracao} =    Set Variable     id=com.google.android.calculator:id/result_final
-    Click Element    ${resultado_substracao}
+    Element Text Should Be    ${resultado_substracao}    2

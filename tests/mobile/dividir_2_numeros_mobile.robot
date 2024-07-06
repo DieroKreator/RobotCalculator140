@@ -40,6 +40,6 @@ Dividir 2 numeros
     ${btn_igual} =    Set Variable     accessibility_id=equals
     Click Element    ${btn_igual}
     ${resultado_dividir} =    Set Variable     id=com.google.android.calculator:id/result_final
-    Click Element    ${resultado_dividir}
+    Element Text Should Be    ${resultado_dividir}    4
     ${btn_limpar} =    Set Variable     accessibility_id=clear
     Click Element    ${btn_limpar}

@@ -40,6 +40,6 @@ Multiplicar 2 numeros
     ${btn_igual} =    Set Variable     accessibility_id=equals
     Click Element    ${btn_igual}
     ${resultado_multiplicar} =    Set Variable     id=com.google.android.calculator:id/result_final
-    Click Element    ${resultado_multiplicar}
+    Element Text Should Be    ${resultado_multiplicar}    24
     ${btn_limpar} =    Set Variable     accessibility_id=clear
     Click Element    ${btn_limpar}

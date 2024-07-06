@@ -40,4 +40,4 @@ Somar 2 numeros
     ${botao_igual} =    Set Variable     accessibility_id=equals
     Click Element    ${botao_igual}
     ${resultado_soma} =    Set Variable     id=com.google.android.calculator:id/result_final
-    Click Element    ${resultado_soma}
+    Element Text Should Be    ${resultado_soma}    4
